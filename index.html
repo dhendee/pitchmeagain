@@ -1,0 +1,226 @@
+<html>
+  <head>
+    <title>Pitch Me Again</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>    
+    <script>
+      $(document).ready(function() {
+        $.fn.shuffle = function() {
+          $.each(this.get(), function(index, el) {
+            var $el = $(el);
+            var $find = $el.children();
+
+            $find.sort(function() {
+              return 0.5 - Math.random();
+            });
+
+            $el.empty();
+            $find.appendTo($el);
+          });
+        };
+
+        $('.shuffled').shuffle();
+
+        $('#shuffle').click(function() {
+          $('.shuffled').shuffle();
+          return false;
+        }); 
+      });
+    </script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 48px;
+        line-height: 63px;
+        margin: 0 0 40px 0;
+      }
+      h2 {
+        font-size: 72px;
+        line-height: 87px;
+        color: #006DCC;
+      }
+      a {
+        color: #cccccc; 
+      }
+      a:hover {
+        color: #006DCC;
+        text-decoration: none;
+      }
+      h2 li {
+        line-height: inherit;
+      }
+      #business, #market {
+        display: inline-block;
+      }
+      #business li, #market li {
+        display: none;
+      }
+      #business li:first-child, #market li:first-child {
+        display: block;
+      }
+      #business, #market {
+        background: #006DCC;
+        color: #fff;
+        padding-left: .5rem;
+        padding-right: .5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">      
+      <h2 class="clearfix">
+        It&rsquo;s like
+        <ul id="business" class="unstyled shuffled">
+          <li>Facebook</li>
+          <li>Youtube</li>
+          <li>Kickstarter</li>
+          <li>Dribbble</li>
+          <li>Yelp</li>
+          <li>LinkedIn</li>
+          <li>Reddit</li>
+          <li>Pinterest</li>
+          <li>Twitter</li>
+          <li>TaskRabbit</li>
+          <li>Wikipedia</li>
+          <li>eBay</li>
+          <li>Zappos</li>
+          <li>Chatroulette</li>
+          <li>Craigslist</li>
+          <li>Angie's List</li>
+          <li>an app store</li>
+          <li>GitHub</li>
+          <li>Coursera</li>
+          <li>Words with Friends</li>
+          <li>Candy Crush</li>
+          <li>Vine</li>
+          <li>Foursquare</li>
+          <li>Flipboard</li>
+          <li>Pandora</li>
+          <li>Groupon</li>
+          <li>Spotify</li>
+          <li>Uber</li>
+          <li>Airbnb</li>
+          <li>Etsy</li>
+          <li>Instructables</li>
+          <li>Skype</li>
+          <li>Netflix</li>
+          <li>Tumblr</li>
+          <li>Dropbox</li>
+          <li>Twilio</li>
+          <li>OK Cupid</li>
+          <li>Amway</li>
+          <li>Scientology</li>
+          <li>Ancestry.com</li>
+          <li>Yo</li>
+          <li>Snapchat</li>
+          <li>Nest</li>
+          <li>Fitbit</li>
+          <li>Twitch.tv</li>
+          <li>Neighborhood</li>
+          <li>Shapeways</li>
+          <li>Tesla</li>
+          <li>Warby Parker</li>
+        </ul>
+        <span>for</span>
+        <ul id="market" class="unstyled shuffled">
+          <li>non-profits</li>
+          <li>computers</li>
+          <li>the government</li>
+          <li>kids</li>
+          <li>parents</li>
+          <li>small business</li>
+          <li>the enterprise</li>
+          <li>new moms</li>
+          <li>divorcees</li>
+          <li>celebrities</li>
+          <li>lawyers</li>
+          <li>day labor</li>
+          <li>doctors</li>
+          <li>scientists</li>
+          <li>babies</li>
+          <li>tweens</li>
+          <li>photographs</li>
+          <li>memes</li>
+          <li>college students</li>
+          <li>sports</li>
+          <li>videos</li>
+          <li>journalism</li>
+          <li>live video</li>
+          <li>big data</li>
+          <li>physical products</li>
+          <li>food</li>
+          <li>digital goods</li>
+          <li>music</li>
+          <li>your friends</li>
+          <li>your family</li>
+          <li>old friends</li>
+          <li>big data</li>
+          <li>remote family members</li>
+          <li>travel</li>
+          <li>everything</li>
+          <li>widows</li>
+          <li>baby boomers</li>
+          <li>the terminally ill</li>
+          <li>designers</li>
+          <li>D.I.Y.</li>
+          <li>fundraising</li>
+          <li>festival concerts</li>
+          <li>vacations</li>
+          <li>unwanted stuff</li>
+          <li>big oil</li>
+          <li>architects</li>
+          <li>personal finance</li>
+          <li>investment banking</li>
+          <li>big pharma</li>
+          <li>airlines</li>
+          <li>air travelers</li>
+          <li>the military</li>
+          <li>education</li>
+          <li>health care</li>
+          <li>fitness</li>
+          <li>banking</li>
+          <li>the very rich</li>
+          <li>politics</li>
+          <li>finance</li>
+          <li>automobiles</li>
+          <li>dating</li>
+          <li>telephony</li>
+          <li>startups</li>
+          <li>developers</li>
+          <li>pets</li>
+          <li>transportation</li>
+          <li>big agriculture</li>
+          <li>family farms</li>
+          <li>organized crime</li>
+          <li>casinos</li>
+          <li>religion</li>
+          <li>herbal supplements</li>
+          <li>drones</li>
+          <li>3d printing</li>
+          <li>Glass</li>
+          <li>smart waches</li>
+          <li>video games</li>
+          <li>neighborhoods</li>
+          <li>hitmen</li>
+          <li>organized crime</li>
+          <li>the police</li>
+          <li>fashion</li>
+          <li>perfume</li>
+          <li>booze</li>
+          <li>drugs</li>
+          <li>yoga</li>
+          <li>superheroes</li>
+          <li>job seekers</li>
+          <li>toast</li>
+          <li>cooking</li>
+        </ul>.
+      </h2>
+      <h3> 
+        <a href="#" id="shuffle">Pitch me again.</a>
+      </h3>
+    </div>    
+  </body>
+</html>
