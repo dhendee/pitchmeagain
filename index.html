@@ -2,7 +2,6 @@
   <head>
     <title>Pitch Me Again</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>    
     <script>
       $(document).ready(function() {
         $.fn.shuffle = function() {
@@ -25,57 +24,61 @@
           $('.shuffled').shuffle();
           return false;
         }); 
+
+        $('#tweet').click(function() {
+          var link = $(this);
+          var pitch = $('#pitch');
+          var tweet = '"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '." http://pitchmeagain.com';
+          link.attr('href', 'http://twitter.com/home?status=' + tweet);
+          return true;
+        });
       });
     </script>
-    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <style>
       body {
         padding: 20px;
       }
-      h1 {
-        font-size: 48px;
-        line-height: 63px;
-        margin: 0 0 40px 0;
-      }
       h2 {
-        font-size: 72px;
-        line-height: 87px;
-        color: #006DCC;
+        font-size: 120px;
+        line-height: 160px;
       }
       a {
         color: #cccccc; 
       }
       a:hover {
-        color: #006DCC;
+        color: #337ab7;
         text-decoration: none;
       }
       h2 li {
         line-height: inherit;
       }
-      #business, #market {
-        display: inline-block;
+      ul {
+        display: inline;
       }
       #business li, #market li {
         display: none;
       }
       #business li:first-child, #market li:first-child {
-        display: block;
+        display: inline;
       }
       #business, #market {
-        background: #006DCC;
-        color: #fff;
+        border-bottom: 10px dotted #cccccc;
         padding-left: .5rem;
         padding-right: .5rem;
       }
     </style>
   </head>
   <body>
-    <div class="container">      
-      <h3>
-        <a href="#" id="shuffle">Pitch me again.</a>
-      </h3>
-      <h2 class="clearfix">
-        It&rsquo;s like
+    <div class="container">    
+      <p class="clearfix">
+        <a href="#" id="shuffle" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span> Pitch me again.</a>
+        <a href="#" id="tweet" class="btn btn-lg pull-right" target="_blank"><span class="fa fa-twitter"></span> Tweet this pitch.</a>
+      </p>
+      <hr>
+      <h2 id="pitch">
+        <span>It&rsquo;s like </span>
         <ul id="business" class="unstyled shuffled">
           <li>Facebook</li>
           <li>Youtube</li>
@@ -203,7 +206,9 @@
           <li>herbal supplements</li>
           <li>drones</li>
           <li>3d printing</li>
-          <li>Glass</li>
+          <li>Google Glass</li>
+          <li>Apple Watch</li>
+          <li>Occulus Rift</li>
           <li>smart waches</li>
           <li>video games</li>
           <li>neighborhoods</li>
@@ -216,13 +221,18 @@
           <li>drugs</li>
           <li>yoga</li>
           <li>superheroes</li>
+          <li>vigilantes</li>
+          <li>the morning</li>
+          <li>couples</li>
+          <li>newlyweds</li>
           <li>job seekers</li>
           <li>toast</li>
           <li>cooking</li>
-        </ul>.
+        </ul><span>.</span>
       </h2>
-      <p class="pull-right">
-        <small><a href="https://github.com/dhendee/pitchmeagain">Contribute</a></small>
+      <hr>
+      <p class="clearfix">
+        <a href="https://github.com/dhendee/pitchmeagain" class="btn btn-lg pull-right"><span class="fa fa-github"></span> Contribute</a>
       </p>
     </div>    
   </body>
