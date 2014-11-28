@@ -32,8 +32,8 @@
         $('#tweet').click(function() {
           var link = $(this);
           var pitch = $('#pitch');
-          var tweet = encodeURIComponent('"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '." http://pitchmeagain.com');
-          link.attr('href', 'http://mobile.twitter.com/home?status=' + tweet);
+          var tweet = '"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '."';
+          link.attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet) + '&url=' + encodeURIComponent('http://pitchmeagain.com'));
           return true;
         });
       });
@@ -77,7 +77,7 @@
   <body>
     <div class="container">    
       <p class="clearfix">
-        <a href="#" id="shuffle" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span> aPitch me again.</a>
+        <a href="#" id="shuffle" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-repeat"></span> Pitch me again.</a>
         <a href="#" id="tweet" class="btn btn-lg pull-right" target="_blank"><span class="fa fa-twitter"></span> Tweet this pitch.</a>
       </p>
       <hr>
