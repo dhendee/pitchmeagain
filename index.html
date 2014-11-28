@@ -33,7 +33,7 @@
           var link = $(this);
           var pitch = $('#pitch');
           var tweet = encodeURIComponent('"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '." http://pitchmeagain.com');
-          link.attr('href', 'http://twitter.com/home?status=' + tweet);
+          link.attr('href', 'http://mobile.twitter.com/home?status=' + tweet);
           return true;
         });
       });
@@ -45,8 +45,8 @@
         padding: 20px;
       }
       h1 {
-        font-size: 120px;
-        line-height: 160px;
+        font-size: 72px;
+        line-height: 90px;
       }
       a {
         color: #cccccc; 
@@ -68,7 +68,7 @@
         display: inline;
       }
       #business, #market {
-        border-bottom: 10px solid #cccccc;
+        border-bottom: 2px dotted #cccccc;
         padding-left: .5rem;
         padding-right: .5rem;
       }
