@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pitch Me Again</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>
@@ -28,7 +32,7 @@
         $('#tweet').click(function() {
           var link = $(this);
           var pitch = $('#pitch');
-          var tweet = '"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '." http://pitchmeagain.com';
+          var tweet = encodeURIComponent('"It\'s like ' + $('#business li:first-child').text() + ' for ' + $('#market li:first-child').text() + '." http://pitchmeagain.com');
           link.attr('href', 'http://twitter.com/home?status=' + tweet);
           return true;
         });
@@ -40,7 +44,7 @@
       body {
         padding: 20px;
       }
-      h2 {
+      h1 {
         font-size: 120px;
         line-height: 160px;
       }
@@ -64,7 +68,7 @@
         display: inline;
       }
       #business, #market {
-        border-bottom: 10px dotted #cccccc;
+        border-bottom: 10px solid #cccccc;
         padding-left: .5rem;
         padding-right: .5rem;
       }
@@ -77,7 +81,7 @@
         <a href="#" id="tweet" class="btn btn-lg pull-right" target="_blank"><span class="fa fa-twitter"></span> Tweet this pitch.</a>
       </p>
       <hr>
-      <h2 id="pitch">
+      <h1 id="pitch">
         <span>It&rsquo;s like </span>
         <ul id="business" class="unstyled shuffled">
           <li>Facebook</li>
@@ -230,7 +234,6 @@
           <li>cooking</li>
         </ul><span>.</span>
       </h2>
-      <hr>
       <p class="clearfix">
         <a href="https://github.com/dhendee/pitchmeagain" class="btn btn-lg pull-right"><span class="fa fa-github"></span> Contribute</a>
       </p>
