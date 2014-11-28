@@ -24,7 +24,7 @@
 
         $('.shuffled').shuffle();
 
-        $('#shuffle').click(function() {
+        $('.shuffle').click(function() {
           $('.shuffled').shuffle();
           return false;
         }); 
@@ -48,11 +48,7 @@
         font-size: 72px;
         line-height: 90px;
       }
-      a {
-        color: #cccccc; 
-      }
       a:hover {
-        color: #337ab7;
         text-decoration: none;
       }
       h2 li {
@@ -77,172 +73,173 @@
   <body>
     <div class="container">    
       <p class="clearfix">
-        <a href="#" id="shuffle" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-repeat"></span> Pitch me again.</a>
+        <a href="#" class="shuffle btn btn-lg" target="_blank"><span class="fa fa-refresh"></span> Pitch me again.</a>
+        <a href="https://github.com/dhendee/pitchmeagain" class="btn btn-lg pull-right"><span class="fa fa-github"></span> Contribute</a>
         <a href="#" id="tweet" class="btn btn-lg pull-right" target="_blank"><span class="fa fa-twitter"></span> Tweet this pitch.</a>
       </p>
       <hr>
-      <h1 id="pitch">
-        <span>It&rsquo;s like </span>
-        <ul id="business" class="unstyled shuffled">
-          <li>Facebook</li>
-          <li>Youtube</li>
-          <li>Kickstarter</li>
-          <li>Dribbble</li>
-          <li>Yelp</li>
-          <li>LinkedIn</li>
-          <li>Soundcloud</li>
-          <li>Reddit</li>
-          <li>Pinterest</li>
-          <li>Twitter</li>
-          <li>TaskRabbit</li>
-          <li>Wikipedia</li>
-          <li>eBay</li>
-          <li>Zappos</li>
-          <li>Chatroulette</li>
-          <li>Craigslist</li>
-          <li>Angie's List</li>
-          <li>an app store</li>
-          <li>GitHub</li>
-          <li>Coursera</li>
-          <li>Khan Academy</li>
-          <li>TED</li>
-          <li>Words with Friends</li>
-          <li>Candy Crush</li>
-          <li>Vine</li>
-          <li>Foursquare</li>
-          <li>Flipboard</li>
-          <li>Pandora</li>
-          <li>Groupon</li>
-          <li>Spotify</li>
-          <li>Uber</li>
-          <li>Airbnb</li>
-          <li>Waze</li>
-          <li>Etsy</li>
-          <li>Instructables</li>
-          <li>Skype</li>
-          <li>Netflix</li>
-          <li>Tumblr</li>
-          <li>Dropbox</li>
-          <li>Twilio</li>
-          <li>OK Cupid</li>
-          <li>Scientology</li>
-          <li>Ancestry.com</li>
-          <li>Yo</li>
-          <li>Snapchat</li>
-          <li>Shazam</li>
-          <li>Nest</li>
-          <li>Fitbit</li>
-          <li>Twitch.tv</li>
-          <li>Neighborhood</li>
-          <li>Shapeways</li>
-          <li>Tesla</li>
-          <li>Warby Parker</li>
-          <li>Tinder</li>
-        </ul>
-        <span>for</span>
-        <ul id="market" class="unstyled shuffled">
-          <li>non-profits</li>
-          <li>computers</li>
-          <li>the government</li>
-          <li>kids</li>
-          <li>parents</li>
-          <li>small business</li>
-          <li>the enterprise</li>
-          <li>new moms</li>
-          <li>divorcees</li>
-          <li>celebrities</li>
-          <li>lawyers</li>
-          <li>day labor</li>
-          <li>doctors</li>
-          <li>scientists</li>
-          <li>babies</li>
-          <li>tweens</li>
-          <li>photographs</li>
-          <li>memes</li>
-          <li>college students</li>
-          <li>sports</li>
-          <li>videos</li>
-          <li>journalism</li>
-          <li>live video</li>
-          <li>big data</li>
-          <li>physical products</li>
-          <li>food</li>
-          <li>digital goods</li>
-          <li>music</li>
-          <li>your friends</li>
-          <li>your family</li>
-          <li>old friends</li>
-          <li>big data</li>
-          <li>remote family members</li>
-          <li>travel</li>
-          <li>everything</li>
-          <li>widows</li>
-          <li>baby boomers</li>
-          <li>the terminally ill</li>
-          <li>designers</li>
-          <li>D.I.Y.</li>
-          <li>fundraising</li>
-          <li>festival concerts</li>
-          <li>vacations</li>
-          <li>unwanted stuff</li>
-          <li>big oil</li>
-          <li>architects</li>
-          <li>personal finance</li>
-          <li>investment banking</li>
-          <li>big pharma</li>
-          <li>airlines</li>
-          <li>air travelers</li>
-          <li>the military</li>
-          <li>education</li>
-          <li>health care</li>
-          <li>fitness</li>
-          <li>banking</li>
-          <li>the very rich</li>
-          <li>politics</li>
-          <li>finance</li>
-          <li>automobiles</li>
-          <li>dating</li>
-          <li>telephony</li>
-          <li>startups</li>
-          <li>developers</li>
-          <li>pets</li>
-          <li>transportation</li>
-          <li>big agriculture</li>
-          <li>family farms</li>
-          <li>organized crime</li>
-          <li>casinos</li>
-          <li>religion</li>
-          <li>herbal supplements</li>
-          <li>drones</li>
-          <li>3d printing</li>
-          <li>Google Glass</li>
-          <li>Apple Watch</li>
-          <li>Occulus Rift</li>
-          <li>smart waches</li>
-          <li>video games</li>
-          <li>neighborhoods</li>
-          <li>hitmen</li>
-          <li>organized crime</li>
-          <li>the police</li>
-          <li>fashion</li>
-          <li>perfume</li>
-          <li>booze</li>
-          <li>drugs</li>
-          <li>yoga</li>
-          <li>superheroes</li>
-          <li>vigilantes</li>
-          <li>the morning</li>
-          <li>couples</li>
-          <li>newlyweds</li>
-          <li>job seekers</li>
-          <li>toast</li>
-          <li>coffee lovers</li>
-          <li>cooking</li>
-        </ul><span>.</span>
-      </h2>
-      <p class="clearfix">
-        <a href="https://github.com/dhendee/pitchmeagain" class="btn btn-lg pull-right"><span class="fa fa-github"></span> Contribute</a>
-      </p>
+      <a href="#" class="shuffle">
+        <h1 id="pitch">
+          <span>It&rsquo;s like </span>
+          <ul id="business" class="unstyled shuffled">
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>Kickstarter</li>
+            <li>Dribbble</li>
+            <li>Yelp</li>
+            <li>LinkedIn</li>
+            <li>Soundcloud</li>
+            <li>Reddit</li>
+            <li>Pinterest</li>
+            <li>Twitter</li>
+            <li>TaskRabbit</li>
+            <li>Wikipedia</li>
+            <li>eBay</li>
+            <li>Zappos</li>
+            <li>Chatroulette</li>
+            <li>Craigslist</li>
+            <li>Angie's List</li>
+            <li>an app store</li>
+            <li>GitHub</li>
+            <li>Coursera</li>
+            <li>Khan Academy</li>
+            <li>TED</li>
+            <li>Words with Friends</li>
+            <li>Candy Crush</li>
+            <li>Vine</li>
+            <li>Foursquare</li>
+            <li>Flipboard</li>
+            <li>Pandora</li>
+            <li>Groupon</li>
+            <li>Spotify</li>
+            <li>Uber</li>
+            <li>Airbnb</li>
+            <li>Waze</li>
+            <li>Etsy</li>
+            <li>Instructables</li>
+            <li>Skype</li>
+            <li>Netflix</li>
+            <li>Tumblr</li>
+            <li>Dropbox</li>
+            <li>Twilio</li>
+            <li>OK Cupid</li>
+            <li>Scientology</li>
+            <li>Ancestry.com</li>
+            <li>Yo</li>
+            <li>Snapchat</li>
+            <li>Shazam</li>
+            <li>Nest</li>
+            <li>Fitbit</li>
+            <li>Twitch.tv</li>
+            <li>Neighborhood</li>
+            <li>Shapeways</li>
+            <li>Tesla</li>
+            <li>Warby Parker</li>
+            <li>Tinder</li>
+          </ul>
+          <span>for</span>
+          <ul id="market" class="unstyled shuffled">
+            <li>non-profits</li>
+            <li>computers</li>
+            <li>the government</li>
+            <li>kids</li>
+            <li>parents</li>
+            <li>small business</li>
+            <li>the enterprise</li>
+            <li>new moms</li>
+            <li>divorcees</li>
+            <li>celebrities</li>
+            <li>lawyers</li>
+            <li>day labor</li>
+            <li>doctors</li>
+            <li>scientists</li>
+            <li>babies</li>
+            <li>tweens</li>
+            <li>photographs</li>
+            <li>memes</li>
+            <li>college students</li>
+            <li>sports</li>
+            <li>videos</li>
+            <li>journalism</li>
+            <li>live video</li>
+            <li>big data</li>
+            <li>physical products</li>
+            <li>food</li>
+            <li>digital goods</li>
+            <li>music</li>
+            <li>your friends</li>
+            <li>your family</li>
+            <li>old friends</li>
+            <li>big data</li>
+            <li>remote family members</li>
+            <li>travel</li>
+            <li>everything</li>
+            <li>widows</li>
+            <li>baby boomers</li>
+            <li>the terminally ill</li>
+            <li>designers</li>
+            <li>D.I.Y.</li>
+            <li>fundraising</li>
+            <li>festival concerts</li>
+            <li>vacations</li>
+            <li>unwanted stuff</li>
+            <li>big oil</li>
+            <li>architects</li>
+            <li>personal finance</li>
+            <li>investment banking</li>
+            <li>big pharma</li>
+            <li>airlines</li>
+            <li>air travelers</li>
+            <li>the military</li>
+            <li>education</li>
+            <li>health care</li>
+            <li>fitness</li>
+            <li>banking</li>
+            <li>the very rich</li>
+            <li>politics</li>
+            <li>finance</li>
+            <li>automobiles</li>
+            <li>dating</li>
+            <li>telephony</li>
+            <li>startups</li>
+            <li>developers</li>
+            <li>pets</li>
+            <li>transportation</li>
+            <li>big agriculture</li>
+            <li>family farms</li>
+            <li>organized crime</li>
+            <li>casinos</li>
+            <li>religion</li>
+            <li>herbal supplements</li>
+            <li>drones</li>
+            <li>3d printing</li>
+            <li>Google Glass</li>
+            <li>Apple Watch</li>
+            <li>Occulus Rift</li>
+            <li>smart waches</li>
+            <li>video games</li>
+            <li>neighborhoods</li>
+            <li>hitmen</li>
+            <li>organized crime</li>
+            <li>the police</li>
+            <li>fashion</li>
+            <li>perfume</li>
+            <li>booze</li>
+            <li>drugs</li>
+            <li>yoga</li>
+            <li>superheroes</li>
+            <li>vigilantes</li>
+            <li>the morning</li>
+            <li>couples</li>
+            <li>newlyweds</li>
+            <li>job seekers</li>
+            <li>toast</li>
+            <li>coffee lovers</li>
+            <li>cooking</li>
+            <li>self-driving cars</li>
+          </ul><span>.</span>
+        </h1>
+      </a>
     </div>    
   </body>
 </html>
