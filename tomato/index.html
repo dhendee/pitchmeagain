@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pitch Me Again - Tomato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $.fn.shuffle = function() {
+          $.each(this.get(), function(index, el) {
+            var $el = $(el);
+            var $find = $el.children();
+
+            $find.sort(function() {
+              return 0.5 - Math.random();
+            });
+
+            $el.empty();
+            $find.appendTo($el);
+          });
+        };
+
+        $('.shuffled').shuffle();
+
+        $('.shuffle').click(function() {
+          $('.shuffled').shuffle();
+          return false;
+        }); 
+
+      });
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 72px;
+        line-height: 90px;
+        cursor: pointer;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+      }
+      a, a:hover, a:active {
+        text-decoration: none;
+      }
+      h2 li {
+        line-height: inherit;
+      }
+      ul {
+        display: inline;
+      }
+      #business li, #market li {
+        display: none;
+      }
+      #business li:first-child, #market li:first-child {
+        display: inline;
+      }
+      #business, #market {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand shuffle" href="#"><span class="fa fa-refresh"></span> Pitch me again.</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">    
+      <h1 id="pitch" class="shuffle">
+        <ul id="business" class="unstyled shuffled">
+          <li>Swarm</li>
+          <li>Nectar</li>
+          <li>Cell</li>
+          <li>Pollen</li>
+          <li>Flight</li>
+          <li>Hexagon</li>
+          <li>Hex</li>
+          <li>Clover</li>
+          <li>Apiary</li>
+          <li>Flutter</li>
+          <li>Bee</li>
+          <li>Bon</li>
+          <li>Hex</li>
+          <li>Beeper</li>
+          <li>Bounty</li>
+          <li>Pollen</li>
+          <li>Flower</li>
+          <li>Food</li>
+          <li>Victuals</li>
+          <li>Provisions</li>
+          <li>Vittle</li>
+          <li>Chow</li>
+          <li>Chuck</li>
+          <li>Fare</li>
+          <li>Farm</li>
+          <li>Acre</li>
+          <li>Tomato</li>
+          <li>Fruit</li>
+          <li>Fertile</li>
+          <li>Grocer</li>
+          <li>Rebel</li>
+          <li>Veggie</li>
+          <li>Terra</li>
+          <li>Food</li>
+          <li>Nourish</li>
+          <li>Sustain</li>
+          <li>Bread</li>
+          <li>Edible</li>
+          <li>Pasture</li>
+          <li>Grocer</li>
+          <li>Feed</li>
+          <li>Seed</li>
+        </ul><ul id="market" class="unstyled shuffled">
+          <li>Saver</li>
+          <li>Liberator</li>
+          <li>Delivery</li>
+          <li>Help</li>
+          <li>Aid</li>
+          <li>Assist</li>
+          <li>Bandit</li>
+          <li>Seed</li>
+          <li>Hive</li>
+          <li>Line</li>
+          <li>Path</li>
+          <li>Orchard</li>
+          <li>Field</li>
+          <li>Rescue</li>
+          <li>Alliance</li>
+          <li>Planter</li>
+          <li>Basket</li>
+          <li>Bushell</li>
+          <li>Cast</li>
+          <li>Net</li>
+          <li>Web</li>
+          <li>Work</li>
+          <li>Cycle</li>
+          <li>Hub</li>
+          <li>Trip</li>
+          <li>Shift</li>
+          <li>ter</li>
+          <li>Book</li>
+          <li>Map</li>
+          <li>Box</li>
+          <li>Cycle</li>
+          <li>Nation</li>
+          <li>Tote</li>
+          <li>Bot</li>
+          <li>Droid</li>
+          <li>Table</li>
+          <li>Share</li>
+          <li>Road</li>
+          <li>Street</li>
+          <li>Stand</li>
+          <li>Forage</li>
+          <li>Awesome</li>
+          <li>Rad</li>
+          <li>Happy</li>
+          <li>ly</li>
+          <li>Line</li>
+          <li>Way</li>
+          <li>Net</li>
+          <li>ion</li>
+          <li>lia</li>
+          <li>able</li>
+          <li>y</li>
+        </ul>
+      </h1>
+    </div>    
+  </body>
+</html>
